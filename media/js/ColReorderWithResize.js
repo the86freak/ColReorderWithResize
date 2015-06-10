@@ -1023,6 +1023,7 @@
                 $(nTh).width(newWidth);
 
                 aoColumns[index].sWidth = newWidth+"px";
+                this.s.dt.oInstance.fnAdjustColumnSizing();
                 that.s.fnResizeTableCallback(nTable,newTableWidth,newTableWidth-tableWidth);
             };
            
